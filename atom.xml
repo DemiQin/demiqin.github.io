@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://demiqin.club/"/>
+  <link href="https://demiqin.github.io/"/>
   <updated>2017-12-12T09:48:26.000Z</updated>
-  <id>http://demiqin.club/</id>
+  <id>https://demiqin.github.io/</id>
   
   <author>
     <name>Qin Yu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Rhythm Master</title>
-    <link href="http://demiqin.club/2017/12/12/Rhythm-Master/"/>
-    <id>http://demiqin.club/2017/12/12/Rhythm-Master/</id>
+    <link href="https://demiqin.github.io/2017/12/12/Rhythm-Master/"/>
+    <id>https://demiqin.github.io/2017/12/12/Rhythm-Master/</id>
     <published>2017-12-12T22:08:42.000Z</published>
     <updated>2017-12-12T09:48:26.000Z</updated>
     
@@ -35,67 +35,15 @@
     
     </summary>
     
-      <category term="Project" scheme="http://demiqin.club/categories/Project/"/>
+      <category term="Project" scheme="https://demiqin.github.io/categories/Project/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>A Little Reminder -- Writing at Sunny Day</title>
-    <link href="http://demiqin.club/2017/07/26/Reminder/"/>
-    <id>http://demiqin.club/2017/07/26/Reminder/</id>
-    <published>2017-07-26T21:52:20.000Z</published>
-    <updated>2017-10-08T12:50:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Every now and then I need a little reminder, so I just stop with the little thing like writing down my feeling at that moment, a moment with a cup of milk and air conditioner in my room. And life will be sweet :)</p>
-<p>Even the real situation is that I am struggling with a theorem in a paper now.   </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Every now and then I need a little reminder, so I just stop with the little thing like writing down my feeling at that moment, a moment w
-    
-    </summary>
-    
-      <category term="Personal" scheme="http://demiqin.club/categories/Personal/"/>
-    
-    
-      <category term="personal" scheme="http://demiqin.club/tags/personal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AI-Robotics Literature Review</title>
-    <link href="http://demiqin.club/2017/07/26/review/"/>
-    <id>http://demiqin.club/2017/07/26/review/</id>
-    <published>2017-07-26T21:31:02.000Z</published>
-    <updated>2017-10-08T12:50:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>A simple assignment written by me ^ ^<br>Here is a brief literature review of artificial intelligence and robotics, especially for application of reinforcement learning algorithms. </p>
-<p>This paper reports the state-of-the-art on artificial intelligence and robotics in an integrated, concise, and elegantly distilled manner to show the experiences in the field. In particular, this paper provides a broad review of recent developments within the field of artificial intelligence (AI) and AI’s applications for robot. By studying 31 related papers, it concludes that general robot intelligence has experienced tremendous development in recent years, especially in the field of machine learning. However, in terms of autonomous underwater robots and bio-inspired robots, there is almost no consensus nor formalism in the field.</p>
-<ul>
-<li><a href="http://ormsugr52.bkt.clouddn.com/YUQIN_A%20Literature%20Review%20of%20Artificial%20Intelligence%20and%20Robotics%20.pdf" target="_blank" rel="external">Review</a></li>
-<li><a href="http://ormsugr52.bkt.clouddn.com/YUQIN_Literature%20Review%20of%20AI%20and%20Robotics%28PPT%29.pps" target="_blank" rel="external">Slide</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A simple assignment written by me ^ ^&lt;br&gt;Here is a brief literature review of artificial intelligence and robotics, especially for applic
-    
-    </summary>
-    
-      <category term="AI Research" scheme="http://demiqin.club/categories/AI-Research/"/>
-    
-    
-      <category term="project" scheme="http://demiqin.club/tags/project/"/>
     
   </entry>
   
   <entry>
     <title>iCooka Education Robot</title>
-    <link href="http://demiqin.club/2017/06/19/icooka/"/>
-    <id>http://demiqin.club/2017/06/19/icooka/</id>
+    <link href="https://demiqin.github.io/2017/06/19/icooka/"/>
+    <id>https://demiqin.github.io/2017/06/19/icooka/</id>
     <published>2017-06-19T21:55:10.000Z</published>
     <updated>2017-10-08T12:55:08.000Z</updated>
     
@@ -113,30 +61,10 @@
     
     </summary>
     
-      <category term="Project" scheme="http://demiqin.club/categories/Project/"/>
+      <category term="Project" scheme="https://demiqin.github.io/categories/Project/"/>
     
     
-      <category term="project" scheme="http://demiqin.club/tags/project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://demiqin.club/2017/06/13/hello-world/"/>
-    <id>http://demiqin.club/2017/06/13/hello-world/</id>
-    <published>2017-06-13T12:16:10.000Z</published>
-    <updated>2017-10-08T12:49:28.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://demiqin.club/">Demi’s Club</a>! This is a place where surrounding fun and love. Here I want to share my project and life, hope you enjoy it.</p>
-<p>More info: <a href="http://demiqin.club/about/">About me</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://demiqin.club/&quot;&gt;Demi’s Club&lt;/a&gt;! This is a place where surrounding fun and love. Here I want to share my proje
-    
-    </summary>
-    
+      <category term="project" scheme="https://demiqin.github.io/tags/project/"/>
     
   </entry>
   
