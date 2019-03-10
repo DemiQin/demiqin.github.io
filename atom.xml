@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Qin Yu</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://demiqin.github.io/"/>
+  <updated>2017-12-12T09:48:26.000Z</updated>
+  <id>https://demiqin.github.io/</id>
+  
+  <author>
+    <name>Qin Yu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rhythm Master</title>
+    <link href="https://demiqin.github.io/2017/12/12/Rhythm-Master/"/>
+    <id>https://demiqin.github.io/2017/12/12/Rhythm-Master/</id>
+    <published>2017-12-12T22:08:42.000Z</published>
+    <updated>2017-12-12T09:48:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>This code is written in 2015, so please give your opinion if there are any mistakes :)<br><img src="http://p0u7pzijw.bkt.clouddn.com/rhythm_UI.jpg" alt="image"></p><p>This is a music game that uses Cocos Studio for game data processing and user interface design. The game uses C++ programming. </p><p>When enter the game interface, you can choose the difficulty and songs. After that, click on the keyboard with your finger according to the rhythm of the music. According to the corresponding time is divided into three levels (perfect, good, miss)  and the corresponding score.</p><p>This is a very popular game in China two years ago. Developed by Tencent, I was absolutely a fan of this game. In order to play it even eat four hours in the restaurant (three and a half hours to play this game), but after the completion of this demo, I never touched this game.</p><p>Here is GitHub 👉 <a href="https://github.com/DemiQin/RhythmMaster" target="_blank" rel="noopener">code</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This code is written in 2015, so please give your opinion if there are any mistakes :)&lt;br&gt;&lt;img src=&quot;http://p0u7pzijw.bkt.clouddn.com/rhyt
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="https://demiqin.github.io/categories/Project/"/>
+    
+    
+  </entry>
+  
+</feed>
