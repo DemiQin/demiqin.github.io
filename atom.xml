@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://demiqin.github.io/"/>
-  <updated>2017-12-12T09:48:26.000Z</updated>
+  <updated>2019-03-10T04:33:31.792Z</updated>
   <id>https://demiqin.github.io/</id>
   
   <author>
@@ -17,19 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Rhythm Master</title>
-    <link href="https://demiqin.github.io/2017/12/12/Rhythm-Master/"/>
-    <id>https://demiqin.github.io/2017/12/12/Rhythm-Master/</id>
-    <published>2017-12-12T22:08:42.000Z</published>
-    <updated>2017-12-12T09:48:26.000Z</updated>
+    <title>About me</title>
+    <link href="https://demiqin.github.io/2019/03/09/me/"/>
+    <id>https://demiqin.github.io/2019/03/09/me/</id>
+    <published>2019-03-10T04:32:57.000Z</published>
+    <updated>2019-03-10T04:33:31.792Z</updated>
     
-    <content type="html"><![CDATA[<p>This code is written in 2015, so please give your opinion if there are any mistakes :)<br><img src="http://p0u7pzijw.bkt.clouddn.com/rhythm_UI.jpg" alt="image"></p><p>This is a music game that uses Cocos Studio for game data processing and user interface design. The game uses C++ programming. </p><p>When enter the game interface, you can choose the difficulty and songs. After that, click on the keyboard with your finger according to the rhythm of the music. According to the corresponding time is divided into three levels (perfect, good, miss)  and the corresponding score.</p><p>This is a very popular game in China two years ago. Developed by Tencent, I was absolutely a fan of this game. In order to play it even eat four hours in the restaurant (three and a half hours to play this game), but after the completion of this demo, I never touched this game.</p><p>Here is GitHub 👉 <a href="https://github.com/DemiQin/RhythmMaster" target="_blank" rel="noopener">code</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Hi. You’ve found Yu Qin, also can call me Demi. I am a first year Ph.D. student under the supervision of <a href="http://www.cs.tulane.edu/~carola/" target="_blank" rel="noopener">Prof. Carola Wenk</a> and <a href="http://www.cs.tulane.edu/~bsumma/" target="_blank" rel="noopener">Prof. Brain Summa</a> at Tulane University.   </p><p>My current passion is data visualization and machine learning. If you want to talk to me about this area or anything, please feel free to contact me . My E-mail address is [<a href="mailto:yqin2@tulane.edu" target="_blank" rel="noopener">yqin2@tulane.edu</a>].</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;This code is written in 2015, so please give your opinion if there are any mistakes :)&lt;br&gt;&lt;img src=&quot;http://p0u7pzijw.bkt.clouddn.com/rhyt
+        &lt;p&gt;Hi. You’ve found Yu Qin, also can call me Demi. I am a first year Ph.D. student under the supervision of &lt;a href=&quot;http://www.cs.tulane.ed
+      
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="https://demiqin.github.io/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rhythm Master</title>
+    <link href="https://demiqin.github.io/2017/12/12/Rhythm-Master/"/>
+    <id>https://demiqin.github.io/2017/12/12/Rhythm-Master/</id>
+    <published>2017-12-12T22:08:42.000Z</published>
+    <updated>2019-03-10T04:25:00.278Z</updated>
+    
+    <content type="html"><![CDATA[<p>This code is written in 2015 when I was a sophomore student :)<br><img src="https://www.google.com/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjjsJDd3PbgAhVMvKwKHUcjDQMQjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.techinasia.com%2Frhythm-master-review-keeping-the-beat-with-chinese-pop&amp;psig=AOvVaw3nWQ4CZnVEdrSBFZ2cuBpX&amp;ust=1552278109231641" alt="image"></p><p>This is a music game that uses Cocos Studio for user interface design. The game uses C++ programming. </p><p>When entering the game interface, you can choose the difficulty and songs. After that, click on the keyboard with your finger according to the rhythm of the music. According to the corresponding time is divided into three levels (perfect, good, miss)  and the corresponding score.</p><p>This is a very popular game in China two years ago. Developed by Tencent, I was absolutely a fan of this game. In order to play it even eat four hours in the restaurant (three and a half hours to play this game), but after the completion of this demo, I never touched this game.</p><p>Here is GitHub 👉 <a href="https://github.com/DemiQin/RhythmMaster" target="_blank" rel="noopener">code</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This code is written in 2015 when I was a sophomore student :)&lt;br&gt;&lt;img src=&quot;https://www.google.com/url?sa=i&amp;amp;source=images&amp;amp;cd=&amp;amp
       
     
     </summary>
