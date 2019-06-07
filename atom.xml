@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://demiqin.github.io/"/>
-  <updated>2019-06-07T22:17:11.206Z</updated>
+  <updated>2019-06-07T22:18:29.545Z</updated>
   <id>https://demiqin.github.io/</id>
   
   <author>
@@ -21,12 +21,22 @@
     <link href="https://demiqin.github.io/2019/06/07/How-to-install-TDA-package-on-Cypress-AKA-The-longest-three-day/"/>
     <id>https://demiqin.github.io/2019/06/07/How-to-install-TDA-package-on-Cypress-AKA-The-longest-three-day/</id>
     <published>2019-06-07T22:17:11.000Z</published>
-    <updated>2019-06-07T22:17:11.206Z</updated>
+    <updated>2019-06-07T22:18:29.545Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul><li><p>R/3.5.2-intel<br>with gcc/6.3.0<br><code>compilation aborted for test-runner.cpp (code 4)make: *** [test-runner.o] Error 4ERROR: compilation failed for package ‘testthat’</code><br><code>ERROR: dependency ‘stringi’ is not available for package ‘stringr’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘scales’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘RcppEigen’</code><br><code>ERROR: dependency ‘stringr’ is not available for package ‘knitr’</code><br><code>ERROR: dependencies ‘Rcpp’, ‘igraph’, ‘scales’, ‘BH’, ‘RcppEigen’ are not available for package ‘TDA’</code><br><code>ERROR: dependencies ‘testthat’, ‘igraph’, ‘knitr’ are not available for package ‘lintr’</code></p></li><li><p>R/3.2.4 </p></li></ul><p>$install.packages(“TDA”, depencencies = TRUE)<br><code>make: *** [diag.o] Error 1ERROR: compilation failed for package ‘TDA’</code></p><p>looks like gcc compilar problem.<br>try to use another vesion gcc/6.3.0.</p><p>$ module load gcc/6.3.0<br><code>diag.cpp:510:1: fatal error: error writing to /tmp/    ccLHK4rz.s: No space left on device}^compilation terminated.make: *** [diag.o] Error 1ERROR: compilation failed for package ‘TDA’</code></p><p>still compilar problem.</p><ul><li>R/3.3.1-intel<br>with gcc/6.3.0<br><code>compilation aborted for RcppExports.cpp (code 2)make: *** [RcppExports.o] Error 2</code><br>Tried to install Rcpp package, nothing changed.</li></ul><h2 id="Spack"><a href="#Spack" class="headerlink" title="Spack"></a>Spack</h2><p>Pete told me spack is a life-savior tool that is same as homebrew while only use in suprecomputer, sounds like best for Cypress and I can use it to install R!<br>First issue is I can’t use Spack to install any version of R and we think the problem is gcc version. So I use this life-savior too to install gcc, guess what’s happened? A error! Cool!<br>$spack install gcc</p><p>Error: ProcessError: Command exited with status 2:<br>‘/bin/tar’ ‘-xf’ ‘/lustre/project/bsumma/demi/spack/var/spack/stage/gcc-8.2.0-3zfn4kwzb2p6ghp7lltxf6aug4kzpmgz/gcc-8.2.0.tar.xz’</p><p>Google told me I have a issue about build tar.xz package, let’s try to figure it out,and also try to use spack to install r.<br><code>==&gt; Error: ProcessError: Command exited with status 2:&#39;make&#39; &#39;-j40&#39;</code></p><h2 id="back-up-plan"><a href="#back-up-plan" class="headerlink" title="back up plan"></a>back up plan</h2><p>Already send email to the technologists of Cypress to ask help and finally we made it!<br>To install TDA in R/3.2.4 via the following steps.</p><p>$module load R/3.2.4 gcc/4.9.4<br>$Rscript -e ‘install.packages(“TDA”, repos = “<a href="http://cran.us.r-project.org&quot;)&#39;" target="_blank" rel="noopener">http://cran.us.r-project.org&quot;)&#39;</a> 2&gt;&amp;1 | tee install.packages.log<br>$Rscript -e ‘library(TDA)’</p><p>So the magick is <code>2&gt;&amp;1 | tee install.packages.log</code> what’s that means? The 2&gt;&amp;1 routes stderr to stdout, so everything will output in a single stream. I learned something new!</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h2 id=&quot;R&quot;&gt;&lt;a href=&quot;#R&quot; class=&quot;headerlink&quot; title=&quot;R&quot;&gt;&lt;/a&gt;R&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;R/3.5.2-intel&lt;br&gt;with gcc/6.3.0&lt;br&gt;&lt;code&gt;compilation aborted for 
+      
+    
     </summary>
     
+    
+      <category term="tools" scheme="https://demiqin.github.io/tags/tools/"/>
     
   </entry>
   

@@ -257,9 +257,15 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="tools">tools</a>
+    
+</div>
+                
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">0</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">430</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -388,7 +394,36 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        
+        <h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul>
+<li><p>R/3.5.2-intel<br>with gcc/6.3.0<br><code>compilation aborted for test-runner.cpp (code 4)
+make: *** [test-runner.o] Error 4
+ERROR: compilation failed for package ‘testthat’</code><br><code>ERROR: dependency ‘stringi’ is not available for package ‘stringr’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘scales’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘RcppEigen’</code><br><code>ERROR: dependency ‘stringr’ is not available for package ‘knitr’</code><br><code>ERROR: dependencies ‘Rcpp’, ‘igraph’, ‘scales’, ‘BH’, ‘RcppEigen’ are not available for package ‘TDA’</code><br><code>ERROR: dependencies ‘testthat’, ‘igraph’, ‘knitr’ are not available for package ‘lintr’</code></p>
+</li>
+<li><p>R/3.2.4 </p>
+</li>
+</ul>
+<p>$install.packages(“TDA”, depencencies = TRUE)<br><code>make: *** [diag.o] Error 1
+ERROR: compilation failed for package ‘TDA’</code></p>
+<p>looks like gcc compilar problem.<br>try to use another vesion gcc/6.3.0.</p>
+<p>$ module load gcc/6.3.0<br><code>diag.cpp:510:1: fatal error: error writing to /tmp/    ccLHK4rz.s: No space left on device
+}
+^
+compilation terminated.
+make: *** [diag.o] Error 1
+ERROR: compilation failed for package ‘TDA’</code></p>
+<p>still compilar problem.</p>
+<ul>
+<li>R/3.3.1-intel<br>with gcc/6.3.0<br><code>compilation aborted for RcppExports.cpp (code 2)
+make: *** [RcppExports.o] Error 2</code><br>Tried to install Rcpp package, nothing changed.</li>
+</ul>
+<h2 id="Spack"><a href="#Spack" class="headerlink" title="Spack"></a>Spack</h2><p>Pete told me spack is a life-savior tool that is same as homebrew while only use in suprecomputer, sounds like best for Cypress and I can use it to install R!<br>First issue is I can’t use Spack to install any version of R and we think the problem is gcc version. So I use this life-savior too to install gcc, guess what’s happened? A error! Cool!<br>$spack install gcc</p>
+<p>Error: ProcessError: Command exited with status 2:<br>‘/bin/tar’ ‘-xf’ ‘/lustre/project/bsumma/demi/spack/var/spack/stage/gcc-8.2.0-3zfn4kwzb2p6ghp7lltxf6aug4kzpmgz/gcc-8.2.0.tar.xz’</p>
+<p>Google told me I have a issue about build tar.xz package, let’s try to figure it out,and also try to use spack to install r.<br><code>==&gt; Error: ProcessError: Command exited with status 2:
+&#39;make&#39; &#39;-j40&#39;</code></p>
+<h2 id="back-up-plan"><a href="#back-up-plan" class="headerlink" title="back up plan"></a>back up plan</h2><p>Already send email to the technologists of Cypress to ask help and finally we made it!<br>To install TDA in R/3.2.4 via the following steps.</p>
+<p>$module load R/3.2.4 gcc/4.9.4<br>$Rscript -e ‘install.packages(“TDA”, repos = “<a href="http://cran.us.r-project.org&quot;)&#39;" target="_blank" rel="noopener">http://cran.us.r-project.org&quot;)&#39;</a> 2&gt;&amp;1 | tee install.packages.log<br>$Rscript -e ‘library(TDA)’</p>
+<p>So the magick is <code>2&gt;&amp;1 | tee install.packages.log</code> what’s that means? The 2&gt;&amp;1 routes stderr to stdout, so everything will output in a single stream. I learned something new!</p>
+
     </article>
     <!-- license  -->
     
@@ -515,7 +550,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#R"><span class="toc-number">1.</span> <span class="toc-text">R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spack"><span class="toc-number">2.</span> <span class="toc-text">Spack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#back-up-plan"><span class="toc-number">3.</span> <span class="toc-text">back up plan</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -599,6 +634,8 @@ top:50vh;
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
     
         <span class="sidebar-tag-name" data-tags="personal"><span class="iconfont-archer">&#xe606;</span>personal</span>
     
