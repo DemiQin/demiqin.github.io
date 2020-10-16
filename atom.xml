@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://demiqin.github.io/"/>
-  <updated>2019-06-07T22:18:29.545Z</updated>
+  <updated>2020-10-16T04:24:30.058Z</updated>
   <id>https://demiqin.github.io/</id>
   
   <author>
@@ -17,43 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>How to install TDA package on Cypress(AKA: The longest three day)</title>
-    <link href="https://demiqin.github.io/2019/06/07/How-to-install-TDA-package-on-Cypress-AKA-The-longest-three-day/"/>
-    <id>https://demiqin.github.io/2019/06/07/How-to-install-TDA-package-on-Cypress-AKA-The-longest-three-day/</id>
-    <published>2019-06-07T22:17:11.000Z</published>
-    <updated>2019-06-07T22:18:29.545Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul><li><p>R/3.5.2-intel<br>with gcc/6.3.0<br><code>compilation aborted for test-runner.cpp (code 4)make: *** [test-runner.o] Error 4ERROR: compilation failed for package ‘testthat’</code><br><code>ERROR: dependency ‘stringi’ is not available for package ‘stringr’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘scales’</code><br><code>ERROR: dependency ‘Rcpp’ is not available for package ‘RcppEigen’</code><br><code>ERROR: dependency ‘stringr’ is not available for package ‘knitr’</code><br><code>ERROR: dependencies ‘Rcpp’, ‘igraph’, ‘scales’, ‘BH’, ‘RcppEigen’ are not available for package ‘TDA’</code><br><code>ERROR: dependencies ‘testthat’, ‘igraph’, ‘knitr’ are not available for package ‘lintr’</code></p></li><li><p>R/3.2.4 </p></li></ul><p>$install.packages(“TDA”, depencencies = TRUE)<br><code>make: *** [diag.o] Error 1ERROR: compilation failed for package ‘TDA’</code></p><p>looks like gcc compilar problem.<br>try to use another vesion gcc/6.3.0.</p><p>$ module load gcc/6.3.0<br><code>diag.cpp:510:1: fatal error: error writing to /tmp/    ccLHK4rz.s: No space left on device}^compilation terminated.make: *** [diag.o] Error 1ERROR: compilation failed for package ‘TDA’</code></p><p>still compilar problem.</p><ul><li>R/3.3.1-intel<br>with gcc/6.3.0<br><code>compilation aborted for RcppExports.cpp (code 2)make: *** [RcppExports.o] Error 2</code><br>Tried to install Rcpp package, nothing changed.</li></ul><h2 id="Spack"><a href="#Spack" class="headerlink" title="Spack"></a>Spack</h2><p>Pete told me spack is a life-savior tool that is same as homebrew while only use in suprecomputer, sounds like best for Cypress and I can use it to install R!<br>First issue is I can’t use Spack to install any version of R and we think the problem is gcc version. So I use this life-savior too to install gcc, guess what’s happened? A error! Cool!<br>$spack install gcc</p><p>Error: ProcessError: Command exited with status 2:<br>‘/bin/tar’ ‘-xf’ ‘/lustre/project/bsumma/demi/spack/var/spack/stage/gcc-8.2.0-3zfn4kwzb2p6ghp7lltxf6aug4kzpmgz/gcc-8.2.0.tar.xz’</p><p>Google told me I have a issue about build tar.xz package, let’s try to figure it out,and also try to use spack to install r.<br><code>==&gt; Error: ProcessError: Command exited with status 2:&#39;make&#39; &#39;-j40&#39;</code></p><h2 id="back-up-plan"><a href="#back-up-plan" class="headerlink" title="back up plan"></a>back up plan</h2><p>Already send email to the technologists of Cypress to ask help and finally we made it!<br>To install TDA in R/3.2.4 via the following steps.</p><p>$module load R/3.2.4 gcc/4.9.4<br>$Rscript -e ‘install.packages(“TDA”, repos = “<a href="http://cran.us.r-project.org&quot;)&#39;" target="_blank" rel="noopener">http://cran.us.r-project.org&quot;)&#39;</a> 2&gt;&amp;1 | tee install.packages.log<br>$Rscript -e ‘library(TDA)’</p><p>So the magick is <code>2&gt;&amp;1 | tee install.packages.log</code> what’s that means? The 2&gt;&amp;1 routes stderr to stdout, so everything will output in a single stream. I learned something new!</p>]]></content>
+    <title>Publication</title>
+    <link href="https://demiqin.github.io/2020/03/09/pub/"/>
+    <id>https://demiqin.github.io/2020/03/09/pub/</id>
+    <published>2020-03-10T03:32:57.000Z</published>
+    <updated>2020-10-16T04:24:30.058Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;R&quot;&gt;&lt;a href=&quot;#R&quot; class=&quot;headerlink&quot; title=&quot;R&quot;&gt;&lt;/a&gt;R&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;R/3.5.2-intel&lt;br&gt;with gcc/6.3.0&lt;br&gt;&lt;code&gt;compilation aborted for 
-      
     
     </summary>
     
     
-      <category term="tools" scheme="https://demiqin.github.io/tags/tools/"/>
+      <category term="research" scheme="https://demiqin.github.io/tags/research/"/>
     
   </entry>
   
   <entry>
-    <title>About me</title>
-    <link href="https://demiqin.github.io/2019/03/09/me/"/>
-    <id>https://demiqin.github.io/2019/03/09/me/</id>
+    <title>Talks &amp; Activities</title>
+    <link href="https://demiqin.github.io/2019/03/09/talk/"/>
+    <id>https://demiqin.github.io/2019/03/09/talk/</id>
     <published>2019-03-10T04:32:57.000Z</published>
-    <updated>2019-03-10T04:33:31.792Z</updated>
+    <updated>2020-10-16T04:19:50.366Z</updated>
     
-    <content type="html"><![CDATA[<p>Hi. You’ve found Yu Qin, also can call me Demi. I am a first year Ph.D. student under the supervision of <a href="http://www.cs.tulane.edu/~carola/" target="_blank" rel="noopener">Prof. Carola Wenk</a> and <a href="http://www.cs.tulane.edu/~bsumma/" target="_blank" rel="noopener">Prof. Brain Summa</a> at Tulane University.   </p><p>My current passion is data visualization and machine learning. If you want to talk to me about this area or anything, please feel free to contact me . My E-mail address is [<a href="mailto:yqin2@tulane.edu" target="_blank" rel="noopener">yqin2@tulane.edu</a>].</p>]]></content>
+    <content type="html"><![CDATA[<p>This page contains the talk and activities I’ve presented and attend.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Hi. You’ve found Yu Qin, also can call me Demi. I am a first year Ph.D. student under the supervision of &lt;a href=&quot;http://www.cs.tulane.ed
+        &lt;p&gt;This page contains the talk and activities I’ve presented and attend.&lt;/p&gt;
+
       
     
     </summary>
@@ -64,25 +57,26 @@
   </entry>
   
   <entry>
-    <title>Rhythm Master</title>
+    <title>Project</title>
     <link href="https://demiqin.github.io/2017/12/12/Rhythm-Master/"/>
     <id>https://demiqin.github.io/2017/12/12/Rhythm-Master/</id>
     <published>2017-12-12T22:08:42.000Z</published>
-    <updated>2019-03-10T04:25:00.278Z</updated>
+    <updated>2020-10-16T04:25:30.026Z</updated>
     
-    <content type="html"><![CDATA[<p>This code is written in 2015 when I was a sophomore student :)<br><img src="https://www.google.com/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjjsJDd3PbgAhVMvKwKHUcjDQMQjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.techinasia.com%2Frhythm-master-review-keeping-the-beat-with-chinese-pop&amp;psig=AOvVaw3nWQ4CZnVEdrSBFZ2cuBpX&amp;ust=1552278109231641" alt="image"></p><p>This is a music game that uses Cocos Studio for user interface design. The game uses C++ programming. </p><p>When entering the game interface, you can choose the difficulty and songs. After that, click on the keyboard with your finger according to the rhythm of the music. According to the corresponding time is divided into three levels (perfect, good, miss)  and the corresponding score.</p><p>This is a very popular game in China two years ago. Developed by Tencent, I was absolutely a fan of this game. In order to play it even eat four hours in the restaurant (three and a half hours to play this game), but after the completion of this demo, I never touched this game.</p><p>Here is GitHub 👉 <a href="https://github.com/DemiQin/RhythmMaster" target="_blank" rel="noopener">code</a></p>]]></content>
+    <content type="html"><![CDATA[<p>This page maintains some projects I was worked on.</p><h2 id="1-Rythm-Master-A-music-game"><a href="#1-Rythm-Master-A-music-game" class="headerlink" title="1 Rythm Master - A music game"></a>1 Rythm Master - A music game</h2><p>This code is written in 2015 when I was a sophomore student :)<br><img src="https://www.google.com/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjjsJDd3PbgAhVMvKwKHUcjDQMQjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.techinasia.com%2Frhythm-master-review-keeping-the-beat-with-chinese-pop&amp;psig=AOvVaw3nWQ4CZnVEdrSBFZ2cuBpX&amp;ust=1552278109231641" alt="image"></p><p>This is a music game that uses Cocos Studio for user interface design. The game uses C++ programming. </p><p>When entering the game interface, you can choose the difficulty and songs. After that, click on the keyboard with your finger according to the rhythm of the music. According to the corresponding time is divided into three levels (perfect, good, miss)  and the corresponding score.</p><p>This is a very popular game in China two years ago. Developed by Tencent, I was absolutely a fan of this game. In order to play it even eat four hours in the restaurant (three and a half hours to play this game), but after the completion of this demo, I never touched this game.</p><p>Here is GitHub 👉 <a href="https://github.com/DemiQin/RhythmMaster" target="_blank" rel="noopener">code</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;This code is written in 2015 when I was a sophomore student :)&lt;br&gt;&lt;img src=&quot;https://www.google.com/url?sa=i&amp;amp;source=images&amp;amp;cd=&amp;amp
+        &lt;p&gt;This page maintains some projects I was worked on.&lt;/p&gt;
+&lt;h2 id=&quot;1-Rythm-Master-A-music-game&quot;&gt;&lt;a href=&quot;#1-Rythm-Master-A-music-game&quot; class=
       
     
     </summary>
     
-      <category term="Project" scheme="https://demiqin.github.io/categories/Project/"/>
     
+      <category term="project" scheme="https://demiqin.github.io/tags/project/"/>
     
   </entry>
   
